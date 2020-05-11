@@ -180,8 +180,8 @@ def quick_sort_din_3(v, s, d):
             i = i + i1
             j = j + j1
         k = i
-        quick_sort(v, s, k - 1)
-        quick_sort(v, k+1, d)
+        quick_sort_din_3(v, s, k - 1)
+        quick_sort_din_3(v, k+1, d)
 
 def schimbaza2(x):
     y = x % 2
